@@ -14,7 +14,7 @@ class ControllerUserListTestCase(unittest.TestCase):
     def test_get_all_user_response(self):
         response = self.client.get('/api/users')
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(len(response.get_json()), 1)
+        self.assertEqual(len(response.get_json()), 2)
 
 
 if __name__ == "__main__":
